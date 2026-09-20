@@ -1,1 +1,1 @@
-echo "plotly" >> requirements.txt
+plotly
