@@ -8,7 +8,7 @@
 
 ## 💡 About FinPilot
 
-FinPilot helps individuals understand their financial behaviour by transforming raw transaction and spending data into meaningful insights, visualizations, and prioritized recommendations.
+FinPilot helps individuals understand their financial behaviour by transforming transaction and spending data into meaningful insights, visualizations, simulations, and prioritized recommendations.
 
 Instead of only showing users where their money went, FinPilot helps answer:
 
@@ -51,50 +51,89 @@ Prioritized Recommendations
 What-If Simulation
 ```
 
-## 🔍 Insights Generated
+## 🔍 Financial Intelligence
 
-FinPilot analyzes signals such as:
+FinPilot analyzes:
 
 * Spending behaviour
 * Income vs. expenses
 * Category-wise expenses
 * Recurring commitments
+* Monthly spending trends
 * Savings patterns
-* Cash-flow trends
 * Financial goals
 
-These signals are converted into explainable actions such as reducing unnecessary recurring expenses, adjusting spending, prioritizing savings, or planning around upcoming commitments.
+These signals are converted into explainable recommendations that help users identify spending patterns, manage expenses, plan savings, and evaluate financial decisions.
+
+## 🔮 What-If Financial Simulator
+
+FinPilot allows users to explore hypothetical financial decisions and understand their potential effect on their finances.
+
+Users can experiment with changes such as:
+
+* Reducing expenses
+* Increasing savings
+* Adjusting recurring commitments
+* Changing financial goals
+
+This turns financial analysis into an interactive decision-making experience.
 
 ## 🛠️ Tech Stack
 
 **Language:** Python
+
 **Framework:** Streamlit
+
 **Data Processing:** Pandas, NumPy
+
 **Visualization:** Plotly
+
 **Excel Processing:** OpenPyXL
 
-## 📊 Data Sources
+## 📊 Datasets
 
-FinPilot uses financial transaction and personal finance datasets for analysis and testing, including:
+### 1. Personal Finance Transaction Dataset
 
-* Personal transaction data
-* Indian personal finance and spending behaviour data
+Used for transaction-level financial analysis.
 
-The datasets support analysis of transaction patterns, income, expenses, savings, spending categories, and financial goals.
+**Records:** 806 transactions
+
+**Key fields:**
+
+* Date
+* Description
+* Amount
+* Transaction Type
+* Category
+* Account Name
+* Month
+
+The dataset contains personal financial transactions across categories such as groceries, dining, utilities, entertainment and other expenses, making it suitable for spending analysis and financial visualization.
+
+**Source:** Kaggle — Personal Finance Dataset
+https://www.kaggle.com/datasets/entrepreneurlife/personal-finance
+
+### 2. Indian Personal Finance / Financial Behaviour Dataset
+
+Used to support broader analysis of income, expenses, savings and financial behaviour.
+
+**Source:** Kaggle
+
+The datasets are used for development, testing and demonstration of FinPilot's financial analysis capabilities.
 
 ## 🚀 Deployment
 
-FinPilot is deployed using **Streamlit Community Cloud**.
+FinPilot is deployed using Streamlit Community Cloud.
 
 **Live Application:**
 https://finpilot-007.streamlit.app/
 
 ## 🎯 Vision
 
-FinPilot aims to make personal finance more understandable and actionable by moving beyond static expense tracking toward **explainable, personalized financial decision support**.
+FinPilot aims to move personal finance from **passive expense tracking to active financial decision support** by combining data analysis, explainable insights, visualization and what-if simulation.
 
 ---
 
 ### Built for Hackathon
 
-FinPilot combines data analysis, interactive visualization, financial reasoning, and simulation to help users make more informed everyday financial decisions.
+FinPilot combines financial data processing, interactive visualization, analytical reasoning and simulation to help individuals make more informed everyday financial decisions.
